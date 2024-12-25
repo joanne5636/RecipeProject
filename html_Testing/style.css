@@ -30,11 +30,11 @@ body {
   display: block;
 }
 
-.hero-title{
+.hero-title {
   position: absolute;
   left: 50%;
   bottom: 20px;
-  transform: translateX(-50%); 
+  transform: translateX(-50%);
   font-size: 40px;
   color: black;
   z-index: 2;
@@ -124,11 +124,11 @@ body {
   width: 243px;
   height: 190px;
   background-color: #AAB396;
-  color: #000000;
-  padding: 1rem;
   font-size: 16px;
   font-family: "Inter", serif;
   font-weight: 600;
+  color: #000000;
+  padding: 1rem;
   border-radius: 50px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   display: flex;
@@ -308,6 +308,21 @@ body {
     /* Softer corners */
   }
 
+  .recipe-time-card p,
+  .recipe-ingredients-card li ,
+  .recipe-buttercream-card p
+  {
+    font-size: 12px;
+    line-height: 1.5;
+  }
+
+  .buttercream-title {
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+
+
   .steps-section {
     padding: 1rem;
     /* Reduce padding for smaller screens */
@@ -331,7 +346,6 @@ body {
 
   .step p {
     font-size: 12px;
-    /* Slightly smaller text */
   }
 
   .tip {
@@ -348,9 +362,7 @@ body {
     font-size: 8px;
     /* Smaller font for tips */
     border-radius: 15px;
-    font-family:  "Inter", serif;
-    font-size: 14px;
-    font-weight: 600;
+    font-family: "Inter", serif;
   }
 
   .circle {
@@ -382,11 +394,28 @@ body {
     /* Maintain aspect ratio */
   }
 
-  .content {
-    padding: 1rem;
-    /* Reduce padding */
+  .content li{
+    /* padding: 1rem; */
     font-size: 12px;
-    /* Adjust text size */
+  }
+
+  .content li::before {
+    content: counter(li);
+    counter-increment: li;
+    width: 30px;
+    height: 30px;
+    background-color: #F7EED3;
+    color: #543310;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    font-size: 14px;
+    line-height: 1;
+    padding-top: 0;
   }
 
   .image-containers {
