@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Whipped Cream Recipe</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+  <!-- nav bar  -->
+  <!-- <header class="header">
+        <div class="logo">Whipped Cream</div>
+        <nav class="nav">
+          <a href="#">Home</a>
+          <a href="#">Recipes</a>
+          <a href="#">About</a>
+        </nav>
+
+      </header> -->
+
+  <!-- vanilla cake  -->
+  <section class="hero">
+    <img src="img/vanillaCake.png" alt="Vanilla Cake" class="hero-image"/>
+    <h1 class="hero-title">Vanilla Cake</h1>
+  </section>
+
+
+  <section class="container-fluid">
+    <div class="row g-4 justify-content-center">
+      <!-- Prep time card -->
+      <div class="col-md-5">
+        <div class="card recipe-time-card h-100">
+          <div class="card-body d-flex flex-column justify-content-center text-center">
+            <p class="mb-4">Prep Time: 35 minutes</p>
+            <p class="mb-4">Cook Time: 25 minutes</p>
+            <p class="mb-4">Total Time: 4 hours (includes cooling)</p>
+            <p class="mb-0">Yield: 12-14 servings</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Ingredients card -->
+      <div class="col-md-5">
+        <div class="card recipe-ingredients-card h-100">
+          <div class="card-body d-flex flex-column justify-content-center">
+            <ul class="list-unstyled mb-0 text-center">
+              <li class="mb-3">433g of Cake Flour</li>
+              <li class="mb-3">1 teaspoon of salt</li>
+              <li class="mb-3">2 teaspoons of baking powder</li>
+              <li class="mb-3">3/4 teaspoons of baking soda</li>
+              <li class="mb-3">340g of unsalted butter</li>
+              <li class="mb-3">400g of granulated sugar</li>
+              <li class="mb-3">3 large eggs<br>2 additional egg whites</li>
+              <li class="mb-3">1 tablespoon of<br>pure vanilla extract</li>
+              <li class="mb-0">360ml of buttermilk</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Vanilla Buttercream card -->
+      <div class="col-md-10">
+        <div class="card recipe-buttercream-card">
+          <div class="card-body text-center py-4">
+            <p class="buttercream-title mb-3">( Vanilla buttercream )</p>
+            <p class="mb-0">
+              340g unsalted butter, 650g confectioners' sugar,<br>
+              80ml of whole milk/heavy cream, 1 and 1/2 teaspoons of<br>
+              pure vanilla extract, 1/8 teaspoon of salt
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="steps-section">
+
+    <!-- Step 1 -->
+    <div class="step">
+      <div class="image-container">
+        <img src="img/step1.png" alt="Cake batter in a bowl">
+        <div class="tip">
+          <div class="circle"></div>
+          <strong>For more prominent vanilla flavor, use homemade vanilla extract.</strong>
+        </div>
+      </div>
+      <p>This vanilla cake batter is moderately thick and fits perfectly in 3 8-inch cake pans.</p>
+    </div>
+
+    <!-- step 2 -->
+    <div class="step">
+      <img src="img/step2.png" alt="Step 2">
+      <p>Leveling the cake layers promises a straight and sturdy layer cake.</p>
+    </div>
+    <!-- step 3 -->
+    <div class="step">
+      <img src="img/step3.png" alt="Step 3">
+      <p>Recommend to use about 1.5 heaping cups of buttercream between each cake
+        layer</br> and reserve the last 2 cups for outside the cake.</p>
+    </div>
+    <!-- step 4 -->
+    <div class="step">
+      <div class="image-container">
+        <img src="img/step4.png" alt="Step 4">
+        <div class="tip">
+          <div class="circle"></div>
+          <strong>Refrigerate</br> decorated cake</strong>
+        </div>
+      </div>
+      <p>For a simple look, stick with vanilla buttercream, fresh berries, and mint sprigs.</p>
+    </div>
+  </section>
+
+  <section class="section-recipe">
+  <div class="recipe-step">
+    <div class="image-containers">
+      <img src="img/Rectangle 1.png" alt="Rectangle" class="rectangle-image">
+      <img src="img/bear.png" alt="Bear" class="bear-image" id="bearImg">
+      <img src="img/Rectangle 1.png" alt="Rectangle" class="rectangle-image">
+    </div>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
+   
+      <div class="content" id="recipeContent" style="display: none;">
+        <ol>
+          <li>
+            Preheat oven to 350°F (177°C). Grease three 9-inch cake pans, line with
+            parchment paper rounds, then grease the parchment paper. Parchment
+            paper helps the cakes seamlessly release from the pans. 
+          </li>
+
+          <li>
+            Make the cake: Whisk the cake flour, salt, baking powder, and baking soda
+            together. Set aside.
+          </li>
+
+          <li>
+            Using a handheld or stand mixer fitted with a paddle beat the butter and
+            sugar together on high speed until smooth and creamy, about 3 minutes.
+            Scrape down the sides and up the bottom of the bowl. Beat in the 3 eggs,
+            2 egg whites, and vanilla extract on high speed about 2 minutes. With the
+            mixer on low speed, add the dry ingredients. With the mixer still running on
+            low, pour in the buttermilk and mix just until combined. You may need to
+            whisk it all by hand to make sure there are no lumps at the bottom of the bowl.
+          </li>
+          <li>
+            Pour batter evenly into cake pans. Weigh them to ensure accuracy, if desired.
+            Bake for around 23-26 minutes or until the cakes are baked through. To test for
+            doneness, insert a toothpick into the center of the cake. If it comes out clean,
+            it's done. Allow cakes to cool completely in the pans set on a wire cooling rack.
+            The cakes must be completely cool before frosting and assembling.
+          </li>
+          <li>
+            Make the frosting: In a large bowl using a handheld mixer or stand mixer fitted 
+            with a whisk or paddle attachment, beat the butter on medium speed until creamy, 
+            about 2 minutes. Add confectioners' sugar, milk, vanilla extract, and salt with the 
+            mixer running on low. Increase to high speed and beat for 2 minutes. Add more 
+            confectioners' sugar if frosting is too thin, more milk if frosting is too thick, or an 
+            extra pinch of salt if frosting is too sweet.
+          </li>
+          <li>
+            Assemble and decorate: Using a large serrated knife, slice a thin layer off the 
+            tops of the cakes to create a flat surface. Place 1 cake layer on your cake stand, 
+            cake turntable, or serving plate. Evenly cover the top with about 1 and 1/2 
+            cups of frosting. Top with 2nd cake layer and evenly cover the top with about 
+            1 and 1/2 cups of frosting. Top with the third cake layer. Spread the remaining 
+            frosting all over the top and sides.
+          </li>
+          <li>
+            Refrigerate cake for at least 1 hour before slicing. This helps the cake hold its 
+            shape when cutting.
+          </li>
+         
+            <li>
+              Cover leftover cake tightly and store in the refrigerator for up to 5 days. Enjoy!
+            </li>
+      
+        </ol>
+      </div>
+    </div>
+  </section>
+</body>
+
+<script>
+  document.getElementById('bearImg').addEventListener('click', function() {
+      const content = document.getElementById('recipeContent');
+      if (content.classList.contains('show')) {
+        content.classList.remove('show'); // Hide content
+        setTimeout(() => {
+          content.style.display = 'none'; 
+        }, 600); // Match this duration with the CSS transition duration
+      } else {
+        content.style.display = 'block'; // Show content
+        setTimeout(() => {
+          content.classList.add('show'); // Add class to trigger fade in
+        }, 10); // Small timeout to allow display to take effect
+      }
+  });
+  </script>
+
+</html>

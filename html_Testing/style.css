@@ -1,0 +1,409 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", serif;
+  line-height: auto;
+  color: #333;
+  font-size: 16px;
+  background-color: #F7EED3;
+}
+
+.hero {
+  position: relative;
+  text-align: center;
+  margin: 0;
+  /* height: 754px; */
+  width: 100%;
+}
+
+.hero-image {
+  width: 100%;
+  /* max-width: 1591px; */
+  height: 754px;
+  display: inline-block;
+}
+
+.hello h1 {
+  position: absolute;
+  left: 50%;
+  bottom: 20px;
+  transform: translateX(-50%);
+  font-size: 40px;
+  color: black;
+  z-index: 2;
+}
+
+.container-fluid {
+  background-color: #F7EED3 !important;
+  margin: 0;
+}
+
+.recipe-time-card,
+.recipe-ingredients-card,
+.recipe-buttercream-card {
+  background-color: #543310 !important;
+  /* Added !important to ensure it takes precedence */
+  border: none;
+  border-radius: 50px !important;
+  color: #F7EED3 !important;
+}
+
+.recipe-time-card,
+.recipe-ingredients-card {
+  height: 556px !important;
+}
+
+.card-body {
+  padding: 2.5rem;
+}
+
+.recipe-time-card p,
+.recipe-ingredients-card li {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.buttercream-title {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+/* Center the row contents */
+.row.justify-content-center {
+  max-width: 922px;
+  margin: 0 auto;
+}
+
+/* Adjust spacing between cards */
+.g-4 {
+  --bs-gutter-x: 2rem;
+}
+
+.steps-section {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+  background-color: #F7EED3;
+}
+
+.step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 50px;
+}
+
+.image-container {
+  position: relative;
+  /* Allow positioning of child elements */
+  width: 100%;
+  /* Full width to allow positioning */
+}
+
+
+.step img {
+  max-width: 100%;
+  border-radius: 8px;
+  max-height: 559px;
+}
+
+.tip {
+  position: absolute;
+  top: 20px;
+  right: 180px;
+  width: 243px;
+  height: 190px;
+  background-color: #AAB396;
+  color: #000000;
+  padding: 1rem;
+  font-size: 16px;
+  font-family: "Inter", serif;
+  font-weight: 600;
+  border-radius: 50px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0.5rem;
+}
+
+.circle {
+  width: 50px;
+  height: 50px;
+  background-color: #434343;
+  border-radius: 50%;
+}
+
+.step p {
+  color: #543310;
+  margin-top: 1rem;
+  font-size: 16px;
+  font-family: "Inter", serif;
+  font-weight: 600;
+}
+
+.section-recipe {
+  background-color: #F7EED3;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 80px;
+  align-items: center;
+
+}
+
+.recipe-step {
+  background-color: #543310;
+  width: 100%;
+  max-width: 994px;
+  text-align: center;
+  padding: 1rem;
+  border-radius: 50px;
+  align-items: center;
+  color: #F7EED3;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.image-containers {
+  position: relative;
+  display: flex;
+  /* Use flexbox for alignment */
+  align-items: flex-start;
+  margin-bottom: 20px;
+  justify-content: center;
+  gap: 15rem;
+  top: -30px;
+}
+
+.bear-image {
+  width: 100px;
+  height: auto;
+  position: absolute;
+  top: -50px;
+}
+
+.rectangle-image {
+  width: 100%;
+  max-width: 330px;
+  /* Adjust size as needed */
+  height: 35px;
+  /* Maintain aspect ratio */
+
+}
+
+.content {
+  padding-top: 20px;
+  padding-right: 50px;
+  padding-left: 50px;
+  gap: 3rem;
+  opacity: 0;
+  /* Start hidden */
+  transition: opacity 0.5s ease;
+  /* Transition for fade effect */
+  display: none;
+  /* Initially hidden */
+}
+
+.content.show {
+  display: block;
+  /* Show the content */
+  opacity: 1;
+  /* Fully visible */
+}
+
+.content ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  padding-top: 0;
+  counter-reset: li;
+}
+
+.content li {
+  margin-bottom: 20px;
+  display: flex;
+  text-align: left;
+  align-items: center;
+  font-size: 16px;
+  line-height: 1.6;
+  position: relative;
+  padding-left: 64px;
+
+}
+
+
+.content li::before {
+  content: counter(li);
+  counter-increment: li;
+  width: 40px;
+  height: 40px;
+  background-color: #F7EED3;
+  color: #543310;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  font-size: 16px;
+  line-height: 1;
+  padding-top: 0;
+}
+
+.content ol {
+
+  counter-reset: li;
+
+}
+
+@media (max-width: 768px) {
+
+  body {
+    font-size: 14px;
+    /* Adjust base font size */
+  }
+
+  .hero {
+    text-align: center;
+  }
+
+  .hero-image {
+    height: auto;
+    /* Maintain aspect ratio */
+    width: 100%;
+    /* Full width */
+    max-width: 100%;
+    display: block;
+  }
+
+  .hero-title {
+    font-size: 24px;
+    /* Smaller font size for headings */
+    bottom: 1px;
+    /* Adjust position */
+  }
+
+  .recipe-time-card,
+  .recipe-ingredients-card,
+  .recipe-buttercream-card {
+    height: auto !important;
+    /* Allow cards to adjust height dynamically */
+    margin: 1rem;
+    /* Add spacing around cards */
+    padding: 1rem;
+    /* Reduce padding for smaller screens */
+    border-radius: 20px;
+    /* Softer corners */
+  }
+
+  .steps-section {
+    padding: 1rem;
+    /* Reduce padding for smaller screens */
+    gap: 1rem;
+    /* Adjust gap between steps */
+  }
+
+  .step {
+    margin-top: 10px;
+    /* Reduce top margin for smaller screens */
+    padding: 0.5rem;
+    /* Adjust padding */
+  }
+
+  .step img {
+    max-width: 100%;
+    /* Ensure image scales properly */
+    height: auto;
+    /* Allow height to adjust dynamically */
+  }
+
+  .step p {
+    font-size: 12px;
+    /* Slightly smaller text */
+  }
+
+  .tip {
+    top: 10px;
+    /* Adjust position for smaller screens */
+    right: 10px;
+    /* Adjust position */
+    width: 120px;
+    /* Adjust width for smaller devices */
+    height: 90px;
+    /* Let the height adjust with content */
+    padding: 0.5rem;
+    /* Reduce padding */
+    font-size: 8px;
+    /* Smaller font for tips */
+    border-radius: 15px;
+  }
+
+  .circle {
+    width: 15px;
+    /* Adjust size for smaller screens */
+    height: 15px;
+  }
+
+  .image-container {
+    gap: 1rem;
+    /* Reduce gap between images */
+    flex-direction: column;
+    /* Stack images vertically */
+    align-items: center;
+    /* Center-align items */
+  }
+
+  .bear-image {
+    top: -20px;
+    /* Adjust positioning */
+    width: 60px;
+    /* Scale down the bear image */
+  }
+
+  .rectangle-image {
+    width: 100px;
+    /* Adjust width for smaller screens */
+    height: 15px;
+    /* Maintain aspect ratio */
+  }
+
+  .content {
+    padding: 1rem;
+    /* Reduce padding */
+    font-size: 12px;
+    /* Adjust text size */
+  }
+
+  .image-containers {
+    position: relative;
+    display: flex;
+    /* Use flexbox for alignment */
+    align-items: flex-start;
+    margin-bottom: 10px;
+    justify-content: center;
+    gap: 5rem;
+    top: -20px;
+  }
+
+  .section-recipe {
+    padding: 2rem 1rem;
+    /* Reduce top padding */
+  }
+
+  .recipe-step {
+    padding: 1rem;
+    /* Adjust padding */
+    border-radius: 20px;
+    /* Softer edges */
+
+  }
+}

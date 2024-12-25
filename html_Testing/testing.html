@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Whipped Cream Recipe</title>
+  
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: "Inter", sans-serif;
+      background-color: #F7EED3;
+      color: #333;
+    }
+
+    .hero-image {
+      width: 100%;
+      height: 60vh;
+      object-fit: cover;
+    }
+
+    .hero-title {
+      position: absolute;
+      top: 70%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: black;
+      font-size: 3rem;
+      font-weight: 600;
+    }
+
+    .recipe-card {
+      width: 461px;
+      height: 556px;
+  max-width: 100%; /* Remove fixed width */
+  background-color: #543310;
+  border-radius: 50px;
+  padding: 20px;
+  color: #F7EED3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.recipe-card-fullwidth {
+  width: 100%; /* Full width alignment */
+  width: 946px;
+  height: 274px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  padding: 50px 25px;
+  background-color: #543310;
+  color: #F7EED3;
+}
+
+
+.recipe-card ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+    .tip {
+      background-color: #AAB396;
+      color: #000;
+      padding: 1rem;
+      border-radius: 15px;
+      text-align: center;
+      font-weight: 600;
+    }
+
+    .bear-icon {
+      width: 60px;
+      height: 60px;
+      background-color: #AAB396;
+      border-radius: 50%;
+      position: relative;
+    }
+
+    .bear-icon::before,
+    .bear-icon::after {
+      content: '';
+      width: 30px;
+      height: 30px;
+      background-color: #AAB396;
+      border-radius: 50%;
+      position: absolute;
+    }
+
+    .bear-icon::before {
+      top: -10px;
+      left: -20px;
+    }
+
+    .bear-icon::after {
+      top: -10px;
+      right: -20px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navbar
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">Whipped Cream</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Recipes</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav> -->
+
+  <!-- Hero Section -->
+  <div class="position-relative">
+    <img src="img/vanillaCake.png" alt="Vanilla Cake" class="hero-image">
+    <h1 class="hero-title">Vanilla Cake</h1>
+  </div>
+
+  <div class="container my-5">
+    <div class="row g-4">
+      <div class="d-flex  justify-content-center">
+        <div class="recipe-card text-center">
+          <div>
+            <p><strong>Prep Time:</strong> 35 minutes</p>
+            <p><strong>Cook Time:</strong> 25 minutes</p>
+            <p><strong>Total Time:</strong> 4 hours (includes cooling)</p>
+            <p><strong>Yield:</strong> 12-14 servings</p>
+          </div>
+        </div>
+      </div>
+      <div class="d-flex  justify-content-center">
+        <div class="recipe-card text-center">
+          <ul>
+            <li>433g of Cake Flour</li>
+            <li>1 teaspoon of salt</li>
+            <li>2 teaspoons of baking powder</li>
+            <li>3/4 teaspoon of baking soda</li>
+            <li>340g of unsalted butter</li>
+            <li>400g of granulated sugar</li>
+            <li>3 large eggs + 2 egg whites</li>
+            <li>1 tablespoon of pure vanilla extract</li>
+            <li>360ml of buttermilk</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-12 d-flex justify-content-center">
+        <div class="recipe-card-fullwidth text-center">
+          <div>
+            <h4>Vanilla Buttercream</h4>
+            <p>340g unsalted butter, 650g confectioners' sugar,<br> 80ml whole milk/heavy cream, 1½ tsp vanilla extract, 1/8 tsp salt</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+
+  <!-- Steps Section -->
+  <div class="container my-5">
+    <div class="row gy-4">
+      <div class="col-md-6">
+        <img src="img/step1.png" class="img-fluid rounded" alt="Step 1">
+        <div class="tip mt-3">For more prominent vanilla flavor, use homemade vanilla extract.</div>
+      </div>
+      <div class="col-md-6">
+        <p>This vanilla cake batter is moderately thick and fits perfectly in 3 8-inch cake pans.</p>
+      </div>
+
+      <div class="col-md-6">
+        <img src="img/step2.png" class="img-fluid rounded" alt="Step 2">
+      </div>
+      <div class="col-md-6">
+        <p>Leveling the cake layers promises a straight and sturdy layer cake.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Recipe Steps -->
+  <div class="container my-5">
+    <div class="bear-icon mx-auto mb-3"></div>
+    <div class="recipe-card">
+      <ol class="list-group list-group-numbered">
+        <li class="list-group-item bg-transparent text-light">Preheat oven to 350°F (177°C). Grease three 9-inch cake pans...</li>
+        <li class="list-group-item bg-transparent text-light">Make the cake: Whisk the cake flour, salt, baking powder...</li>
+        <li class="list-group-item bg-transparent text-light">Pour batter evenly into cake pans...</li>
+        <li class="list-group-item bg-transparent text-light">Make the frosting: Beat the butter and confectioners' sugar...</li>
+        <li class="list-group-item bg-transparent text-light">Assemble and decorate: Slice the tops of the cakes...</li>
+      </ol>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
