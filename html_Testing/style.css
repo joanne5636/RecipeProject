@@ -18,20 +18,23 @@ body {
   margin: 0;
   /* height: 754px; */
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .hero-image {
   width: 100%;
   /* max-width: 1591px; */
   height: 754px;
-  display: inline-block;
+  display: block;
 }
 
-.hello h1 {
+.hero-title{
   position: absolute;
   left: 50%;
   bottom: 20px;
-  transform: translateX(-50%);
+  transform: translateX(-50%); 
   font-size: 40px;
   color: black;
   z-index: 2;
@@ -345,6 +348,9 @@ body {
     font-size: 8px;
     /* Smaller font for tips */
     border-radius: 15px;
+    font-family:  "Inter", serif;
+    font-size: 14px;
+    font-weight: 600;
   }
 
   .circle {
