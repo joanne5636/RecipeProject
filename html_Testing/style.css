@@ -105,9 +105,8 @@ body {
 
 .image-container {
   position: relative;
-  /* Allow positioning of child elements */
   width: 100%;
-  /* Full width to allow positioning */
+  overflow: hidden;
 }
 
 
@@ -119,28 +118,27 @@ body {
 
 .tip {
   position: absolute;
-  top: 20px;
-  right: 180px;
+  top: 2%; 
+  right: 12%; 
   width: 243px;
-  height: 190px;
+  height: 190px; 
   background-color: #AAB396;
-  font-size: 16px;
+  font-size: 1rem; 
   font-family: "Inter", serif;
   font-weight: 600;
   color: #000000;
-  padding: 1rem;
+  padding: 1rem; /* Consistent padding */
   border-radius: 50px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: center;
   gap: 0.5rem;
 }
 
 .circle {
-  width: 50px;
-  height: 50px;
+  width: 3rem; 
+  height: 3rem;
   background-color: #434343;
   border-radius: 50%;
 }
