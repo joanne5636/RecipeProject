@@ -204,7 +204,7 @@ body {
   padding-top: 20px;
   padding-right: 50px;
   padding-left: 50px;
-  gap: 3rem;
+  gap: 5rem;
   opacity: 0;
   /* Start hidden */
   transition: opacity 0.5s ease;
@@ -223,21 +223,18 @@ body {
 .content ol {
   list-style: none;
   padding: 0;
-  margin: 0;
-  padding-top: 0;
+  margin:0;
   counter-reset: li;
 }
 
 .content li {
-  margin-bottom: 20px;
+  margin-bottom: 50px;
   display: flex;
   text-align: left;
-  align-items: center;
   font-size: 16px;
   line-height: 1.6;
   position: relative;
   padding-left: 64px;
-
 }
 
 
@@ -250,14 +247,12 @@ body {
   color: #543310;
   font-weight: 600;
   display: flex;
-  justify-content: center;
+  justify-content:center;
   align-items: center;
   border-radius: 50%;
   position: absolute;
   left: 0;
   font-size: 16px;
-  line-height: 1;
-  padding-top: 0;
 }
 
 .content ol {
@@ -393,8 +388,8 @@ body {
   }
 
   .content li{
-    /* padding: 1rem; */
     font-size: 12px;
+    align-items: flex-start;
   }
 
   .content li::before {
