@@ -16,7 +16,6 @@ body {
   position: relative;
   text-align: center;
   margin: 0;
-  /* height: 754px; */
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -25,7 +24,6 @@ body {
 
 .hero-image {
   width: 100%;
-  /* max-width: 1591px; */
   height: 754px;
   display: block;
 }
@@ -36,7 +34,7 @@ body {
   bottom: 20px;
   transform: translateX(-50%);
   font-size: 40px;
-  color: black;
+  color: #000000;
   z-index: 2;
 }
 
@@ -75,13 +73,11 @@ body {
   font-weight: 500;
 }
 
-/* Center the row contents */
 .row.justify-content-center {
   max-width: 922px;
   margin: 0 auto;
 }
 
-/* Adjust spacing between cards */
 .g-4 {
   --bs-gutter-x: 2rem;
 }
@@ -118,16 +114,17 @@ body {
 
 .tip {
   position: absolute;
-  top: 2%; 
-  right: 12%; 
-  width: 243px;
+  top: 5%; 
+  right: 5%; 
+  max-width: 80%;
+  width: 240px;
   height: 190px; 
+  font-family: "Inter", serif;
   background-color: #AAB396;
   font-size: 1rem; 
-  font-family: "Inter", serif;
-  font-weight: 600;
+  font-weight: 800;
   color: #000000;
-  padding: 1rem; /* Consistent padding */
+  padding: 1rem;
   border-radius: 50px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   display: flex;
@@ -176,7 +173,6 @@ body {
 .image-containers {
   position: relative;
   display: flex;
-  /* Use flexbox for alignment */
   align-items: flex-start;
   margin-bottom: 20px;
   justify-content: center;
@@ -194,10 +190,7 @@ body {
 .rectangle-image {
   width: 100%;
   max-width: 330px;
-  /* Adjust size as needed */
   height: 35px;
-  /* Maintain aspect ratio */
-
 }
 
 .content {
@@ -206,18 +199,13 @@ body {
   padding-left: 50px;
   gap: 5rem;
   opacity: 0;
-  /* Start hidden */
   transition: opacity 0.5s ease;
-  /* Transition for fade effect */
   display: none;
-  /* Initially hidden */
 }
 
 .content.show {
   display: block;
-  /* Show the content */
   opacity: 1;
-  /* Fully visible */
 }
 
 .content ol {
@@ -265,7 +253,6 @@ body {
 
   body {
     font-size: 14px;
-    /* Adjust base font size */
   }
 
   .hero {
@@ -274,31 +261,23 @@ body {
 
   .hero-image {
     height: auto;
-    /* Maintain aspect ratio */
     width: 100%;
-    /* Full width */
     max-width: 100%;
     display: block;
   }
 
   .hero-title {
     font-size: 24px;
-    /* Smaller font size for headings */
     bottom: 1px;
-    /* Adjust position */
   }
 
   .recipe-time-card,
   .recipe-ingredients-card,
   .recipe-buttercream-card {
     height: auto !important;
-    /* Allow cards to adjust height dynamically */
     margin: 1rem;
-    /* Add spacing around cards */
     padding: 1rem;
-    /* Reduce padding for smaller screens */
     border-radius: 20px;
-    /* Softer corners */
   }
 
   .recipe-time-card p,
@@ -318,23 +297,17 @@ body {
 
   .steps-section {
     padding: 1rem;
-    /* Reduce padding for smaller screens */
     gap: 1rem;
-    /* Adjust gap between steps */
   }
 
   .step {
     margin-top: 10px;
-    /* Reduce top margin for smaller screens */
     padding: 0.5rem;
-    /* Adjust padding */
   }
 
   .step img {
     max-width: 100%;
-    /* Ensure image scales properly */
     height: auto;
-    /* Allow height to adjust dynamically */
   }
 
   .step p {
@@ -343,48 +316,34 @@ body {
 
   .tip {
     top: 10px;
-    /* Adjust position for smaller screens */
     right: 10px;
-    /* Adjust position */
     width: 120px;
-    /* Adjust width for smaller devices */
     height: 90px;
-    /* Let the height adjust with content */
     padding: 0.5rem;
-    /* Reduce padding */
-    font-size: 8px;
-    /* Smaller font for tips */
-    border-radius: 15px;
     font-family: "Inter", serif;
+    font-size: 8px;
+    border-radius: 15px;
   }
 
   .circle {
     width: 15px;
-    /* Adjust size for smaller screens */
     height: 15px;
   }
 
   .image-container {
     gap: 1rem;
-    /* Reduce gap between images */
     flex-direction: column;
-    /* Stack images vertically */
     align-items: center;
-    /* Center-align items */
   }
 
   .bear-image {
     top: -20px;
-    /* Adjust positioning */
     width: 60px;
-    /* Scale down the bear image */
   }
 
   .rectangle-image {
     width: 100px;
-    /* Adjust width for smaller screens */
     height: 15px;
-    /* Maintain aspect ratio */
   }
 
   .content li{
