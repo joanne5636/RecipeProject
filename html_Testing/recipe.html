@@ -15,16 +15,7 @@
 </head>
 
 <body>
-  <!-- nav bar  -->
-  <!-- <header class="header">
-        <div class="logo">Whipped Cream</div>
-        <nav class="nav">
-          <a href="#">Home</a>
-          <a href="#">Recipes</a>
-          <a href="#">About</a>
-        </nav>
 
-      </header> -->
 
   <!-- vanilla cake  -->
   <section class="hero">
@@ -90,7 +81,7 @@
         <img src="img/step1.png" alt="Cake batter in a bowl">
         <div class="tip">
           <div class="circle"></div>
-          <strong>For more prominent vanilla flavor, use homemade vanilla extract.</strong>
+          For more prominent vanilla flavor, use homemade vanilla extract.
         </div>
       </div>
       <p>This vanilla cake batter is moderately thick and fits perfectly in 3 8-inch cake pans.</p>
@@ -113,7 +104,7 @@
         <img src="img/step4.png" alt="Step 4">
         <div class="tip">
           <div class="circle"></div>
-          <strong>Refrigerate</br> decorated cake</strong>
+          Refrigerate</br> decorated cake
         </div>
       </div>
       <p>For a simple look, stick with vanilla buttercream, fresh berries, and mint sprigs.</p>
@@ -192,15 +183,15 @@
   document.getElementById('bearImg').addEventListener('click', function() {
       const content = document.getElementById('recipeContent');
       if (content.classList.contains('show')) {
-        content.classList.remove('show'); // Hide content
+        content.classList.remove('show'); 
         setTimeout(() => {
           content.style.display = 'none'; 
-        }, 600); // Match this duration with the CSS transition duration
+        }, 600); 
       } else {
-        content.style.display = 'block'; // Show content
+        content.style.display = 'block'; 
         setTimeout(() => {
-          content.classList.add('show'); // Add class to trigger fade in
-        }, 10); // Small timeout to allow display to take effect
+          content.classList.add('show'); 
+        }, 10); 
       }
   });
   </script>
